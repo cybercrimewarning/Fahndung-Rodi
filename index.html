@@ -18,13 +18,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 14px;
+  flex-wrap: wrap;
 }
 .header-top a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 5px;
 }
 .header-top a:hover {
   text-decoration: underline;
@@ -35,23 +36,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px;
   border-bottom: 3px solid #0056b3;
+  flex-wrap: wrap;
 }
 .logo {
-  height: 60px;
+  height: 50px;
 }
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #002147;
 }
 .navbar a {
   color: white;
-  padding: 15px 20px;
+  padding: 12px;
   text-decoration: none;
   font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
 }
 .navbar a.active {
   background-color: yellow;
@@ -64,13 +69,15 @@ body {
   padding: 10px;
   font-weight: bold;
   border-radius: 5px;
+  text-align: center;
+  flex-grow: 1;
 }
 
 .container {
   background-color: white;
   border: 3px solid #0056b3;
   border-radius: 10px;
-  width: 600px;
+  max-width: 90%;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -79,14 +86,13 @@ body {
 
 h1 {
   color: #0056b3;
-  font-size: 28px;
-  margin: 0;
-  font-weight: bold;
+  font-size: 24px;
 }
 
 .person-image {
-  width: 220px;
-  height: 220px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
   border: 3px solid #0056b3;
   border-radius: 5px;
   object-fit: cover;
@@ -97,7 +103,6 @@ h1 {
   text-align: left;
   font-size: 16px;
   color: #333;
-  line-height: 1.5;
 }
 .label {
   font-weight: bold;
@@ -132,6 +137,28 @@ h1 {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .notruf {
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
 }
 </style>
 </head>
@@ -176,27 +203,17 @@ h1 {
     <p><span class="label">Haare:</span> Schwarz</p>
     <p><span class="label">Augen:</span> Braun</p>
     <p><span class="label">Besondere Merkmale:</span> Grüner Pullover</p>
-    <p><span class="label">Letzter bekannter Aufenthaltsort:</span> Mülheim-Styrum 45476</p>
-    <p><span class="label">Grund der Fahndung:</span> Vergewaltigung</p>
   </div>
   
   <div class="hinweis">
     Hinweise bitte an die nächste Polizeidienststelle oder unter Notruf 110.
   </div>
-
-  <div class="kontakt">
-    <p>Polizei Nordrhein-Westfalen</p>
-    <p>Telefon: 01234567890</p>
-  </div>
 </div>
 
 <div class="footer">
   © 2025 Ministerium des Innern des Landes Nordrhein-Westfalen | 
-  <a href="#">Inhalt</a> | 
   <a href="#">Impressum</a> | 
-  <a href="#">Datenschutzerklärung</a> | 
-  <a href="#">Wachenfinder</a> | 
-  <a href="#" style="font-weight: bold;">NACH OBEN ↑</a>
+  <a href="#">Datenschutzerklärung</a>
 </div>
 
 </body>
