@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahndung - Polizei NRW</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8eff6;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top {
+  background-color: #002147;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.header-top a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.header-top a:hover {
+  text-decoration: underline;
+}
+
+.main-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 3px solid #0056b3;
+}
+.logo {
+  height: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #002147;
+}
+.navbar a {
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a.active {
+  background-color: yellow;
+  color: #002147;
+}
+
+.notruf {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.container {
+  background-color: white;
+  border: 3px solid #0056b3;
+  border-radius: 10px;
+  width: 600px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #0056b3;
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.person-image {
+  width: 220px;
+  height: 220px;
+  border: 3px solid #0056b3;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-top: 15px;
+}
+.information {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+.label {
+  font-weight: bold;
+  color: #0056b3;
+}
+.hinweis {
+  margin-top: 20px;
+  font-style: italic;
+  color: #d32f2f;
+  font-weight: bold;
+}
+.kontakt {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  color: #333;
+}
+
+.footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  font-size: 14px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div class="header-top">
+  <div>
+    <a href="#">LEICHTE SPRACHE</a> | 
+    <a href="#">GEBÄRDENSPRACHE</a> | 
+    <a href="#">BARRIEREFREIHEIT</a>
+  </div>
+  <div>
+    <a href="#">POLIZEI NRW</a> | 
+    <a href="#">KONTAKT</a>
+  </div>
+</div>
+
+<div class="main-header">
+  <img src="https://i.postimg.cc/9z5pk9M4/BA861393-080-E-4-C72-8-A80-1-BACE7-BC35-FA.png" alt="Polizei NRW Logo" class="logo">
+  <span class="notruf">In dringenden Fällen: Polizei Notruf 110</span>
+</div>
+
+<div class="navbar">
+  <a href="#">POLIZEI NRW</a>
+  <a href="#">INTERNETWACHE</a>
+  <a href="#" class="active">FAHNDUNG</a>
+  <a href="#">PRESSE</a>
+  <a href="#">SOCIAL MEDIA</a>
+  <a href="#">KARRIERE</a>
+  <a href="#">SUCHE</a>
+</div>
+
+<div class="container">
+  <h1>FAHNDUNG</h1>
+  <h2>Person wird gesucht</h2>
+  <img src="https://i.postimg.cc/XYSTt2Dv/561-EABE7-7-FA0-40-BF-B4-C6-C79-A676850-B7.jpg" alt="Rodi" class="person-image">
+  
+  <div class="information">
+    <p><span class="label">Name:</span> Rodi Haji Musa</p>
+    <p><span class="label">Geburtsdatum:</span> 13.10.2007</p>
+    <p><span class="label">Größe:</span> 1,75 m</p>
+    <p><span class="label">Haare:</span> Schwarz</p>
+    <p><span class="label">Augen:</span> Braun</p>
+    <p><span class="label">Besondere Merkmale:</span> Grüner Pullover</p>
+    <p><span class="label">Letzter bekannter Aufenthaltsort:</span> Mülheim-Styrum 45476</p>
+    <p><span class="label">Grund der Fahndung:</span> Vergewaltigung</p>
+  </div>
+  
+  <div class="hinweis">
+    Hinweise bitte an die nächste Polizeidienststelle oder unter Notruf 110.
+  </div>
+
+  <div class="kontakt">
+    <p>Polizei Nordrhein-Westfalen</p>
+    <p>Telefon: 01234567890</p>
+  </div>
+</div>
+
+<div class="footer">
+  © 2025 Ministerium des Innern des Landes Nordrhein-Westfalen | 
+  <a href="#">Inhalt</a> | 
+  <a href="#">Impressum</a> | 
+  <a href="#">Datenschutzerklärung</a> | 
+  <a href="#">Wachenfinder</a> | 
+  <a href="#" style="font-weight: bold;">NACH OBEN ↑</a>
+</div>
+
+</body>
+</html>
